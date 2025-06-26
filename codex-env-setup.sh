@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
+DOTNET_VERSION="9.0"
+
 echo "SETUP .NET ENVIRONMENT"
-echo "NOTE: Make sure to set the DOTNET_VERSION in the environment variables"
 
 echo "1. Install prerequisites"
-
 apt-get update
 apt-get install -y wget apt-transport-https software-properties-common
 
@@ -18,6 +18,5 @@ echo "3. Installing .NET SDK $DOTNET_VERSION..."
 apt-get update
 apt-get install -y dotnet-sdk-$DOTNET_VERSION
 
-# Verify installation
-echo "4. Verify Instalation"
+echo "4. Verify installation"
 dotnet --list-sdks
