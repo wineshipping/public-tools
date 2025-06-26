@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTNET_VERSION="9.0"
+DOTNET_VERSION="8.0"
 
 echo "SETUP .NET ENVIRONMENT"
 
